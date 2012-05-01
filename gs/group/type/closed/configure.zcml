@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configure xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  i18n_domain="groupserver">
+
+  <!--The marker interface for the closed group-->
+  <interface interface=".interfaces.IGSClosedGroup"
+    type="zope.app.content.interfaces.IContentType" />
+  <adapter
+    name="Closed Group"
+    for="Products.CustomUserFolder.interfaces.IGSUserInfo 
+      .interfaces.IGSClosedGroup"
+    provides="gs.group.member.canpost.interfaces.IGSCanPostRule" 
+    factory=".canpostrules.ClosedGroup"  />
+  <browser:viewlet name="gs-group-type-closed-is-closed"
+    manager="gs.group.member.canpost.interfaces.ICanPostInfo"
+    template="browser/templates/closedgroup.pt"
+    class=".canpostviewlets.ClosedGroup"
+    permission="zope2.View" />
+
+</configure>
+

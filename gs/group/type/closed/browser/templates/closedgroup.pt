@@ -1,0 +1,10 @@
+<div id="gs-group-type-closed-is-closed" 
+  class="gs-group-member-canpost-info">
+  <strong
+    tal:attributes="title string:Reason ${view/canPost/statusNum}">You 
+    cannot post</strong> 
+  because 
+  <span class="group"
+    tal:content="view/groupInfo/name">this group</span> is closed.
+</div><!--gs-group-type-closed-is-closed-->
+
