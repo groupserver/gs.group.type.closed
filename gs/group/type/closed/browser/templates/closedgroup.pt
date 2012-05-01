@@ -3,8 +3,8 @@
   <strong
     tal:attributes="title string:Reason ${view/canPost/statusNum}">You 
     cannot post</strong> 
-  because 
+  because this group,
   <span class="group"
-    tal:content="view/groupInfo/name">this group</span> is closed.
+    tal:content="view/groupInfo/name">this group</span>, is closed.
 </div><!--gs-group-type-closed-is-closed-->
 
