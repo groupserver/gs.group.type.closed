@@ -12,5 +12,5 @@ reasons for doing this:
 
 For more information see `Feature 449`_
 
-..  Feature 449: https://redmine.iopen.net/issues/449
+..  _Feature 449: https://redmine.iopen.net/issues/449
 
