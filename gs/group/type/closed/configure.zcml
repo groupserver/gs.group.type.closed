@@ -16,7 +16,7 @@
     manager="gs.group.member.canpost.interfaces.ICanPostInfo"
     template="browser/templates/closedgroup.pt"
     class=".canpostviewlets.ClosedGroup"
-    permission="zope2.View" />
+    permission="zope.Public" />
 
 </configure>
 
