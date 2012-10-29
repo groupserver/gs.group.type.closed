@@ -32,10 +32,11 @@ setup(name='gs.group.type.closed',
     zip_safe=False,
     install_requires=[
         'setuptools',
+        'zope.app.content',
+        'zope.cachedescriptors',
         'gs.group.base',
         'gs.group.member.canpost',
         'Products.CustomUserFolder',
-        # -*- Extra requirements: -*-
     ],
     entry_points="""
     # -*- Entry points: -*-
