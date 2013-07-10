@@ -18,5 +18,10 @@
     class=".canpostviewlets.ClosedGroup"
     permission="zope.Public" />
 
+  <adapter
+    for=".interfaces.IGSClosedGroup
+         zope.publisher.interfaces.browser.IBrowserRequest"
+    provides="gs.group.messages.topicsdigest.interfaces.ITopicsDigestNotifier"
+    factory=".digest.ClosedGroupDigestNotifier" />
 </configure>
 
