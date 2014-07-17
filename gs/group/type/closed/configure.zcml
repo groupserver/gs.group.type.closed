@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <configure xmlns="http://namespaces.zope.org/zope"
-  xmlns:browser="http://namespaces.zope.org/browser"
-  i18n_domain="groupserver">
+           xmlns:browser="http://namespaces.zope.org/browser"
+           i18n_domain="groupserver">
 
   <!--The marker interface for the closed group-->
   <interface interface=".interfaces.IGSClosedGroup"
     type="zope.app.content.interfaces.IContentType" />
   <adapter
     name="Closed Group"
-    for="Products.CustomUserFolder.interfaces.IGSUserInfo 
+    for="Products.CustomUserFolder.interfaces.IGSUserInfo
       .interfaces.IGSClosedGroup"
-    provides="gs.group.member.canpost.interfaces.IGSCanPostRule" 
+    provides="gs.group.member.canpost.interfaces.IGSCanPostRule"
     factory=".canpostrules.ClosedGroup"  />
   <browser:viewlet name="gs-group-type-closed-is-closed"
     manager="gs.group.member.canpost.interfaces.ICanPostInfo"
@@ -23,5 +23,11 @@
          zope.publisher.interfaces.browser.IBrowserRequest"
     provides="gs.group.messages.topicsdigest.interfaces.ITopicsDigestNotifier"
     factory=".digest.ClosedGroupDigestNotifier" />
-</configure>
 
+ <!--The Set Group Type adaptor-->
+  <adapter
+    name="gs-group-type-closed-set"
+    for="gs.group.base.interfaces.IGSGroupMarker"
+    provides="gs.group.type.set.interfaces.ISetType"
+    factory=".set.SetClosedGroup"  />
+</configure>
