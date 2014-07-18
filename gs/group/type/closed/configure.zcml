@@ -3,6 +3,8 @@
            xmlns:browser="http://namespaces.zope.org/browser"
            i18n_domain="groupserver">
 
+  <include package="zope.viewlet" file="meta.zcml" />
+
   <!--The marker interface for the closed group-->
   <interface interface=".interfaces.IGSClosedGroup"
     type="zope.app.content.interfaces.IContentType" />
