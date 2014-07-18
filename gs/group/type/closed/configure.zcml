@@ -30,4 +30,9 @@
     for="gs.group.base.interfaces.IGSGroupMarker"
     provides="gs.group.type.set.interfaces.ISetType"
     factory=".set.SetClosedGroup"  />
+  <!--Note that it is an unnamed adaptor-->
+  <adapter
+    for=".interfaces.IGSClosedGroup"
+    provides="gs.group.type.set.interfaces.IUnsetType"
+    factory=".set.UnsetClosedGroup"  />
 </configure>

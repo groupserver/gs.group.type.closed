@@ -13,18 +13,26 @@
 #
 ############################################################################
 from __future__ import absolute_import, unicode_literals
-from gs.group.type.set import SetABC
+from gs.group.type.set import (SetABC, UnsetABC)
 
 
 class SetClosedGroup(SetABC):
     'Set a group folder to be a closed group'
     name = 'Closed group'
-    typeId = 'gs-group-type-closed'
-    weight = 2048
+    weight = 2048  # This should almost always be at the bottom of the list
     show = True
 
     def set(self):
         '''Add the marker-interface to make the group into a closed
         group.'''
         iFaces = ['gs.group.type.closed.interfaces.IGSClosedGroup']
-        self.add_marker_interfaces(self.group, iFaces)
+        self.add_marker(self.group, iFaces)
+
+
+class UnsetClosedGroup(UnsetABC):
+    name = 'Closed group'
+    setTypeId = 'gs-group-type-closed-set'
+
+    def unset(self):
+        iFaces = ['gs.group.type.closed.interfaces.IGSClosedGroup']
+        self.del_marker(self.group, iFaces)
