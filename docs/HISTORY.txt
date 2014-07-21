@@ -1,14 +1,28 @@
 Changelog
 =========
 
-1.0 - Unreleased
------------------
+4.0.0 (2014-07-21)
+------------------
 
-* Split gs.profile.signup off from Products.GSProfile.
-* Reordered the pages involved in sign up:
-  1. Sign Up
-  2. Set Password
-  3. Change Profile
-  4. Verify Email
-* The Set Password page now takes in the password /en clear/.
+* Added support for ``gs.group.type.set``
 
+3.0.0 (2013-07-10)
+------------------
+
+* Adding a topic-digest notifier that does stops digests going
+  out to people in a closed group.
+
+2.0.1 (2012-10-29)
+------------------
+
+* Updating the README and product dependencies
+
+2.0.0 (2012-07-27)
+------------------
+
+* Fixed a permissions problem
+
+1.0.0 (2012-05-01)
+------------------
+
+* Initial version
