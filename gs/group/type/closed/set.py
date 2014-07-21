@@ -18,7 +18,7 @@ from gs.group.type.set import (SetABC, UnsetABC)
 
 class SetClosedGroup(SetABC):
     'Set a group folder to be a closed group'
-    name = 'Closed group'
+    name = 'Closed group: everyone is blocked from posting'
     weight = 2048  # This should almost always be at the bottom of the list
     show = True
 
