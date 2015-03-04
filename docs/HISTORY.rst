@@ -1,10 +1,23 @@
 Changelog
 =========
 
+4.1.0 (2015-03-03)
+------------------
+
+* Following `gs.group.messages.topic.digest.base`_ from
+  ``gs.group.messages.topicdigest``
+* Naming the reStructuredText files as such
+
+.. _gs.group.messages.topic.digest.base:
+   https://github.com/groupserver/gs.group.messages.topic.digest.base
+
 4.0.0 (2014-07-21)
 ------------------
 
-* Added support for ``gs.group.type.set``
+* Adding support for `gs.group.type.set`_
+
+.. _gs.group.type.set:
+   https://github.com/groupserver/gs.group.type.set
 
 3.0.0 (2013-07-10)
 ------------------
@@ -20,9 +33,12 @@ Changelog
 2.0.0 (2012-07-27)
 ------------------
 
-* Fixed a permissions problem
+* Fixing a permissions problem
 
 1.0.0 (2012-05-01)
 ------------------
 
-* Initial version
+Initial version. It was impossible to close a GroupServer group
+before the creation of this product.
+
+..  LocalWords:  Changelog reStructuredText
