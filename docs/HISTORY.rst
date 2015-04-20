@@ -1,6 +1,12 @@
 Changelog
 =========
 
+4.1.1 (2015-04-20)
+------------------
+
+* Fixing the ``canSend`` attribute on the
+  ``ClosedGroupDigestNotifier``
+
 4.1.0 (2015-03-03)
 ------------------
 
