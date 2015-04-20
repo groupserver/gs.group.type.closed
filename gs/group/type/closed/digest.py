@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 ############################################################################
 #
-# Copyright © 2014 OnlineGroups.net and Contributors.
+# Copyright © 2014, 2015 OnlineGroups.net and Contributors.
 # All Rights Reserved.
 #
 # This software is subject to the provisions of the Zope Public License,
@@ -16,6 +16,7 @@ from __future__ import absolute_import, unicode_literals
 
 
 class ClosedGroupDigestNotifier(object):
+    canSend = False
 
     def __init__(self, group, request):
         pass
