@@ -16,6 +16,7 @@ from __future__ import absolute_import, unicode_literals
 
 
 class ClosedGroupDigestNotifier(object):
+    weight = 9  # Just before the Daily
     canSend = False
 
     def __init__(self, group, request):

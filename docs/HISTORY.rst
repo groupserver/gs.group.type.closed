@@ -1,6 +1,11 @@
 Changelog
 =========
 
+4.1.2 (2015-05-11)
+------------------
+
+* Ensuring that the digest for closed groups is not sent.
+
 4.1.1 (2015-04-20)
 ------------------
 
