@@ -56,4 +56,12 @@
     for=".interfaces.IGSClosedGroup"
     provides="gs.group.type.set.interfaces.IUnsetType"
     factory=".set.UnsetClosedGroup"  />
+
+  <!-- The "group status" for a closed group -->
+  <adapter
+    for="Products.CustomUserFolder.interfaces.IGSUserInfo
+         .interfaces.IGSClosedGroup"
+    provides="gs.profile.status.base.interfaces.IStatusGroupInfo"
+    factory=".sitegroups.StatusGroupInfo" />
+
 </configure>
