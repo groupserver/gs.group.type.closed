@@ -20,9 +20,4 @@ class StatusGroupInfo(GSGroupInfo):
     def __init__(self, userInfo, group):
         self.userInfo = userInfo
         super(StatusGroupInfo, self).__init__(group)
-
-    @property
-    def show(self):
-        '''Determine if the group should be shown to the person. (Always ``False``)'''
-        retval = False
-        return retval
+        self.show = False
