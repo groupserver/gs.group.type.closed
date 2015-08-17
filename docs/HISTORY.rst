@@ -1,6 +1,15 @@
 Changelog
 =========
 
+4.2.0 (2015-08-17)
+------------------
+
+* Dropping closed groups from the *What is happening in your
+  groups* notification (`gs.profile.status.base`_)
+
+  .. _gs.profile.status.base:
+   https://github.com/groupserver/gs.profile.status.base
+
 4.1.2 (2015-05-11)
 ------------------
 
